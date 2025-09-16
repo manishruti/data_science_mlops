@@ -5,3 +5,8 @@ data_ingestion:
   source_URL: http://freakonometrics.free.fr/german_credit.csv
   local_data_file: artifacts/data_ingestion/data.csv
   unzip_dir: artificats/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  local_data_file: artifacts/data_ingestion/data.csv
+  STATUS_FILE: artifacts/data_validation/status.txt

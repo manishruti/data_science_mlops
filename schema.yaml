@@ -1,1 +1,24 @@
-key: value
+COLUMNS:
+  Account Balance: int64
+  Duration of Credit (month): int64
+  Payment Status of Previous Credit: int64
+  Purpose: int64
+  Credit Amount: int64
+  Value Savings/Stocks: int64
+  Length of current employment: int64
+  Instalment per cent: int64
+  Sex & Marital Status: int64
+  Guarantors: int64
+  Duration in Current address: int64
+  Most valuable available asset: int64
+  Age (years): int64
+  Concurrent Credits: int64
+  Type of apartment: int64
+  No of Credits at this Bank: int64
+  Occupation: int64
+  No of dependents: int64
+  Telephone: int64
+  Foreign Worker: int64
+
+TARGET:
+  name: Creditability
