@@ -20,5 +20,5 @@ COLUMNS:
   Telephone: int64
   Foreign Worker: int64
 
-TARGET:
+TARGET_COLUMNS:
   name: Creditability
