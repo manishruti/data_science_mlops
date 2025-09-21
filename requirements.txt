@@ -1,5 +1,5 @@
 pandas
-mlflow
+mlflow==2.5.0
 notebook
 numpy
 scikit-learn
@@ -13,3 +13,5 @@ types-pyYAML
 Flask
 Flask-Cors
 ensure
+ipykernel
+python-dotenv

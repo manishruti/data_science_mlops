@@ -3,9 +3,13 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.data_trainer_pipeline import ModelTrainerPipeline
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationTrainingPipeline
 
+import os
+from dotenv import load_dotenv
 
-
+# Load .env file
+load_dotenv()
 
 
 try:
@@ -36,3 +40,9 @@ except Exception as e:
     logger.exception(e)
     raise e 
 
+try:
+    obj = ModelEvaluationTrainingPipeline()
+    obj.initiate_model_validation()       
+except Exception as e:
+    logger.exception(e)
+    raise e 
